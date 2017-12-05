@@ -10,7 +10,7 @@ class InfoController: UIViewController {
     
     @IBOutlet weak var webView: WKWebView!
     
-    var url: URL? = nil
+    var url: URL?
 
     override func viewDidLoad() {
         super.viewDidLoad()

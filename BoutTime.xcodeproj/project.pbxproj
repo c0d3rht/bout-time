@@ -70,8 +70,8 @@
 				B51175C81FA2124F00C0A716 /* Game.swift */,
 				B51175CA1FA21CD900C0A716 /* Helpers.swift */,
 				B50AB9AB1FA0D9C100FF4BAD /* Main.storyboard */,
-				B50AB9AE1FA0D9C100FF4BAD /* Assets.xcassets */,
 				B50AB9B01FA0D9C100FF4BAD /* LaunchScreen.storyboard */,
+				B50AB9AE1FA0D9C100FF4BAD /* Assets.xcassets */,
 				B50AB9B31FA0D9C100FF4BAD /* Info.plist */,
 				B51175C21FA1B52E00C0A716 /* Events.plist */,
 				B5E62F871FA3750E0014D2D8 /* InfoController.swift */,
@@ -297,7 +297,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SAZ4N8HHA5;
 				INFOPLIST_FILE = BoutTime/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = c0d3rht.github.io.BoutTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -313,7 +312,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SAZ4N8HHA5;
 				INFOPLIST_FILE = BoutTime/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = c0d3rht.github.io.BoutTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
