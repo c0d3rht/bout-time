@@ -14,7 +14,7 @@
 		B50AB9B21FA0D9C100FF4BAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50AB9B01FA0D9C100FF4BAD /* LaunchScreen.storyboard */; };
 		B51175C31FA1B52E00C0A716 /* Events.plist in Resources */ = {isa = PBXBuildFile; fileRef = B51175C21FA1B52E00C0A716 /* Events.plist */; };
 		B51175C91FA2124F00C0A716 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51175C81FA2124F00C0A716 /* Game.swift */; };
-		B51175CB1FA21CD900C0A716 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51175CA1FA21CD900C0A716 /* Helpers.swift */; };
+		B51175CB1FA21CD900C0A716 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51175CA1FA21CD900C0A716 /* Data.swift */; };
 		B51175CD1FA274BC00C0A716 /* ScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51175CC1FA274BC00C0A716 /* ScoreController.swift */; };
 		B5E62F881FA3750E0014D2D8 /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E62F871FA3750E0014D2D8 /* InfoController.swift */; };
 /* End PBXBuildFile section */
@@ -29,7 +29,7 @@
 		B50AB9B31FA0D9C100FF4BAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B51175C21FA1B52E00C0A716 /* Events.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Events.plist; sourceTree = "<group>"; };
 		B51175C81FA2124F00C0A716 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		B51175CA1FA21CD900C0A716 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		B51175CA1FA21CD900C0A716 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		B51175CC1FA274BC00C0A716 /* ScoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreController.swift; sourceTree = "<group>"; };
 		B5E62F871FA3750E0014D2D8 /* InfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,15 +66,15 @@
 			children = (
 				B50AB9A71FA0D9C100FF4BAD /* AppDelegate.swift */,
 				B50AB9A91FA0D9C100FF4BAD /* GameController.swift */,
+				B5E62F871FA3750E0014D2D8 /* InfoController.swift */,
 				B51175CC1FA274BC00C0A716 /* ScoreController.swift */,
+				B51175C21FA1B52E00C0A716 /* Events.plist */,
 				B51175C81FA2124F00C0A716 /* Game.swift */,
-				B51175CA1FA21CD900C0A716 /* Helpers.swift */,
+				B51175CA1FA21CD900C0A716 /* Data.swift */,
+				B50AB9AE1FA0D9C100FF4BAD /* Assets.xcassets */,
 				B50AB9AB1FA0D9C100FF4BAD /* Main.storyboard */,
 				B50AB9B01FA0D9C100FF4BAD /* LaunchScreen.storyboard */,
-				B50AB9AE1FA0D9C100FF4BAD /* Assets.xcassets */,
 				B50AB9B31FA0D9C100FF4BAD /* Info.plist */,
-				B51175C21FA1B52E00C0A716 /* Events.plist */,
-				B5E62F871FA3750E0014D2D8 /* InfoController.swift */,
 			);
 			path = BoutTime;
 			sourceTree = "<group>";
@@ -106,7 +106,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Hariidaran Tamilmaran";
 				TargetAttributes = {
 					B50AB9A31FA0D9C100FF4BAD = {
@@ -156,7 +156,7 @@
 				B50AB9AA1FA0D9C100FF4BAD /* GameController.swift in Sources */,
 				B51175C91FA2124F00C0A716 /* Game.swift in Sources */,
 				B50AB9A81FA0D9C100FF4BAD /* AppDelegate.swift in Sources */,
-				B51175CB1FA21CD900C0A716 /* Helpers.swift in Sources */,
+				B51175CB1FA21CD900C0A716 /* Data.swift in Sources */,
 				B5E62F881FA3750E0014D2D8 /* InfoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +197,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -204,6 +205,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -254,6 +256,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -261,6 +264,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

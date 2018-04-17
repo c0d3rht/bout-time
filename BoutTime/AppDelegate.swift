@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  BoutTime
-//
-//  Created by Hariidaran Tamilmaran on 25/10/17.
-//  Copyright © 2017 Hariidaran Tamilmaran. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

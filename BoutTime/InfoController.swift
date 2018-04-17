@@ -1,8 +1,3 @@
-//
-//  InfoController.swift
-//  BoutTime
-//
-
 import UIKit
 import WebKit
 
@@ -10,16 +5,19 @@ class InfoController: UIViewController {
     
     @IBOutlet weak var webView: WKWebView!
     
-    var url: URL?
+    var eventURL: URL?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let urlRequest = URLRequest(url: url!)
-        webView.load(urlRequest)
+        if let url = eventURL {
+            let urlRequest = URLRequest(url: url)
+            webView.load(urlRequest)
+        }
     }
     
     @IBAction func dismiss(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
 }

@@ -1,7 +1,3 @@
-//
-//  ScoreController.swift
-//  BoutTime
-//
 import UIKit
 
 class ScoreController: UIViewController {
@@ -16,8 +12,4 @@ class ScoreController: UIViewController {
         scoreLabel.text = "\(correctAnswers)/\(totalRounds)"
     }
     
-    @IBAction func playAgain() {
-        let gameController = storyboard?.instantiateViewController(withIdentifier: "Game") as! GameController
-        present(gameController, animated: true)
-    }
 }
