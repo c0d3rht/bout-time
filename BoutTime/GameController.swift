@@ -27,6 +27,7 @@ class GameController: UIViewController, GameDelegate {
     }
     
     var isPlaying: Bool { return game.timer.isValid }
+    let soundEffectsPlayer = SoundEffectsPlayer()
     
     required init?(coder aDecoder: NSCoder) {
         do {
@@ -113,7 +114,10 @@ class GameController: UIViewController, GameDelegate {
         game.pause()
         toggleState()
         
-        if game.evaluate(currentArrangement) {
+        let status = game.evaluate(currentArrangement)
+        soundEffectsPlayer.playSound(status: status)
+        
+        if status {
             game.correctAnswers += 1
             continueButton.setImage(#imageLiteral(resourceName: "next_round_success"), for: .normal)
         } else {

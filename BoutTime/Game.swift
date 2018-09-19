@@ -31,6 +31,7 @@ class Event: Equatable {
 protocol GameDelegate: class {
     var isPlaying: Bool { get }
     
+    func assessAnswer()
     func timerDidUpdate()
 }
 
