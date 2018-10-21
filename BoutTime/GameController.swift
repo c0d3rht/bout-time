@@ -66,8 +66,8 @@ class GameController: UIViewController, GameDelegate {
         }
     }
     
-    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
-        if let event = event, event.subtype == UIEventSubtype.motionShake {
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if let event = event, event.subtype == UIEvent.EventSubtype.motionShake {
             if isPlaying && game.secondsLeft > 0 {
                 assessAnswer()
             }
